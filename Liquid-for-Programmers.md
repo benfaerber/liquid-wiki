@@ -93,7 +93,7 @@ If the output of your tag depends on the arguments it was called with in the tem
 #### Example
 
 ```ruby
-class Random < Liquid::Tag
+class RandomTag < Liquid::Tag
   def initialize(tag_name, max, tokens)
      super
      @max = max.to_i
@@ -104,7 +104,7 @@ class Random < Liquid::Tag
   end
 end
 
-Liquid::Template.register_tag('random', Random)
+Liquid::Template.register_tag('random', RandomTag)
 ```
 
 ```ruby
@@ -156,7 +156,7 @@ All tag blocks are parsed by Liquid.  To create a new block, you just have to
 inherit from `Liquid::Block` and register your class with `Liquid::Template.register_tag`. The `register_tag` method takes two arguments: the user-facing name of the tag, and the class that implements it.
 
 ```ruby
-class Random < Liquid::Block
+class RandomTag < Liquid::Block
   def initialize(tag_name, markup, tokens)
      super
      @rand = markup.to_i
@@ -168,7 +168,7 @@ class Random < Liquid::Block
   end
 end
 
-Liquid::Template.register_tag('random', Random)
+Liquid::Template.register_tag('random', RandomTag)
 ```
 
 ```ruby
