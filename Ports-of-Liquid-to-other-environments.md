@@ -14,3 +14,4 @@
 * [CppLiquid](https://github.com/kainjow/CppLiquid) (C++11)
 * [liquid-elixir](https://github.com/bettyblocks/liquid-elixir) (Elixir)
 * [wet](https://github.com/superkonduktr/wet) (Clojure/ClojureScript)
+* [liquid-ml](https://github.com/benfaerber/liquid-ml) (OCaml)
